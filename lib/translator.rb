@@ -13,7 +13,7 @@ end
 
 def get_japanese_emoticon(emoticon_file, emoticon)
   library = load_library(emoticon_file)
-  result = library[][emoticon]
+  result = library[meaning][emoticon]
   if result 
     result
     else 
@@ -24,7 +24,7 @@ end
 
 def get_english_meaning(emoticon_file, emoticon)
   library = load_library(emoticon_file)
-  result = library['get_meaning'][emoticon]
+  result = library[meaning][emoticon]
   if result
     result 
     else
