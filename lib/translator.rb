@@ -6,7 +6,7 @@ def load_library(emoticon_file)
   emoticons.each do |name, array|
     library[name][:english] = array[0]
     library[name][:japanese] = array[1]
-    #binding.pry 
+    binding.pry 
  end
 library
 end 
