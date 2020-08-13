@@ -4,6 +4,7 @@ def load_library(file_path)
   library = {}
   emoticons = YAML.load_file('./lib/emoticons.yml')
   emoticons.each do |name, array|
+    
     library[name][:english] = array[0]
     library[name][:japanese] = array[1]
     #binding.pry 
